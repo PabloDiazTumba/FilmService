@@ -20,7 +20,7 @@ public class FilmController {
         this.tmdbService = tmdbService;
     }
 
-    // Hämta de mest populära filmerna
+    // Hämta de mest populära filmerna dom mest populära
     @GetMapping("/popular")
     public ResponseEntity<List<Map<String, Object>>> getPopularMovies() {
         List<Map<String, Object>> popularMovies = tmdbService.getPopularMoviesSortedByRating();
